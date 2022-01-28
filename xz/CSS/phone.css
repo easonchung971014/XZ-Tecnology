@@ -1,0 +1,271 @@
+/* 第二區 手機名稱 */
+.phone-all .phone-you h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 250px;
+    color: #fff;
+    transform: translateY(1300px);
+    margin-bottom: 20px;
+}
+
+.phone-all .phone-you .image{
+    margin-top: 20px;
+    height: 400px;
+    max-width: 100%;
+    display:block;
+    margin: auto;
+    transform: translateY(1300px);
+} 
+
+/* 動畫 */
+html{
+    font-size: 48px;
+
+    --iphone-black-bg: rgb(204, 77, 77);
+    --iphone-black-text: rgb(255, 255, 255);
+    
+    --iphone-white-bg: rgb(253, 169, 90);
+    --iphone-white-text: rgb(255, 81, 0);
+    --iphone-white-text-highlight: rgb(255, 81, 0);
+
+    --iphone-red-bg: rgb(255, 196, 0);
+    --iphone-red-text: rgb(255, 249, 163);
+    --iphone-red-text-highlight: rgb(255, 235, 168);
+
+    --iphone-width: 460px;
+    --iphone-offscreen: -720px;
+}
+
+body{
+    margin: 0;
+    height: 3000px;
+    font-family: Helvetica;
+    background-color: #000;
+}
+
+.sticky-container{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sticky-container .iphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sticky-container .iphone h3{
+    font-size: 1rem;
+    margin: 0 0 60px 0;
+    width: var(--iphone-width);
+}
+
+.sticky-container .iphone img{
+  display:  block;
+  width: var(--iphone-width);
+  margin-bottom: var(--iphone-offscreen);
+}
+
+.sticky-container .iphone.black{
+    background-color: var(--iphone-black-bg);
+    z-index: 10;
+}
+
+.sticky-container .iphone.black h3{
+    color: var(--iphone-black-text);
+}
+
+.sticky-container .iphone.white{
+    background-color: var(--iphone-white-bg);
+    z-index: 20;
+
+    clip-path: inset(100% 0px 0px 0px);
+}
+
+.sticky-container .iphone.white h3{
+    color: var(--iphone-white-text);
+}
+
+.sticky-container .iphone.white span{
+    color: var(--iphone-white-text-highlight);
+}
+
+.sticky-container .iphone.red{
+    background-color: var(--iphone-red-bg);
+    z-index: 30;
+
+    clip-path: inset(100% 0px 0px 0px);
+}
+
+.sticky-container .iphone.red h3{
+    color: var(--iphone-red-text);
+}
+
+.sticky-container .iphone.red span{
+    color: var(--iphone-red-text-highlight);
+}
+
+.sticky-container.no-sticky{
+    position: relative;
+    overflow: visible;
+}
+
+.sticky-container.no-sticky .iphone{
+    position: relative;
+}
+
+.sticky-container.no-sticky .iphone.red{
+    padding-bottom: calc(var(--iphone-offscreen) * -1);
+}
+
+/* 第二區 手機介紹 */
+.phone-all .phone-a{
+    transform: translateY(1300px);
+    background-color: #000;
+}
+
+.phone-all .phone-a img{
+    height: 450px;
+    display: block;
+    margin: auto;
+
+}
+
+.phone-all .phone-a h1{
+color: #fff;
+transform: translateY(1px);
+z-index: 900;  
+text-align: center;
+font-size: 60px;
+margin-top: 80px;
+
+}
+
+.phone-b h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 3rem;
+    transform: translateY(1250px);
+}
+
+.phone-b img{
+    
+    height: 600px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    transform: translateY(1250px);
+}
+
+
+
+.xsuper .xphone .super{
+    color: rgb(70, 70, 70);
+}
+
+.xsuper .xphone #super{
+    margin-top: 300px;
+    text-align: center;
+    transform: translateY(1150px);
+    font-size: 1rem;
+    color:rgb(158, 158, 158);
+    
+}
+
+.xsuper .xphone #up{
+    transform: translateY(250px);
+    text-align: center;
+    font-size:50px;
+
+}
+
+.xsuper .xphone img{
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    transform: translateY(1450px);
+    z-index: -1;
+    height: auto;
+    width: 50%;
+}
+
+/* 第()區 本站源起 */
+.we{
+    transform: translateY(1500px);
+    background-color: rgb(230, 230, 230);
+    height: 400px;
+}
+
+.we #web .all .pangdafp img{
+    border-radius: 10px;
+    margin-left: -150px;
+    height: 90px;
+    margin-bottom: 90px;
+    margin-top: 10px;
+}
+
+.we #web .all .pangdafp img:hover{
+    border-radius: 10px;
+    margin-left: -150px;
+    height: 95px;
+    margin-bottom: 90px;
+    margin-top: 10px;
+}
+
+/* footer */
+
+.footer{
+    background-color: rgb(158, 158, 158);
+    transform: translateY(1500px);
+}
+
+.footer h1{
+    color: #fff;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.footer .go .people{
+    color: rgb(255, 255, 255);
+    font-size: 9px;
+    text-align: center;
+    margin: auto;
+}
+
+@media (max-width:600px){
+    .xsuper .xphone #super{
+        margin-top: 300px;
+        text-align: center;
+        transform: translateY(1100px);
+        font-size: 0.6rem;
+        color:rgb(158, 158, 158);
+        
+    }
+    
+    .xsuper .xphone #up{
+        transform: translateY(900px);
+        text-align: center;
+        font-size:25px;
+    
+    }
+
+    .xsuper .xphone img{
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+        transform: translateY(1350px);
+        z-index: -1;
+        height: auto;
+        width: 50%;
+    }
+}

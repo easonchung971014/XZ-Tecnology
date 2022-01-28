@@ -1,0 +1,177 @@
+body{
+    background-color: #fff;
+}
+
+/* 頁面設定 */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.4s all linear;
+    font-size: 22px; 
+    font-family: Helvetica;
+}
+
+::selection {
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+::-moz-selection {
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+
+    /* 第一區 首頁 header*/
+#home header{
+        font-size: 20px;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background: rgb(0, 0, 0);
+        opacity: 0.9;        
+    }
+
+    #home header  img{
+        height: 25px;
+        margin-left: 40px;
+    }
+
+    #home header a{
+        color: white;
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+     #home header  .navbar a:hover{
+        font-size: 25px;
+        font-weight: 100;
+        color:rgb(199, 199, 199);
+        margin-left: 20px;
+        transition: 0.1s;
+        background-color: rgb(0, 0, 0);
+        padding:1px 1px 1px 1px;
+    }
+
+    #home header img:hover{
+        font-size: 24px;
+        font-weight: 100;
+        background-color:rgb(168, 168, 168);
+        margin-left: 40px;
+        transition: 0.1s;
+        background-color: rgb(0, 0, 0);
+        padding:1px 1px 1px 1px;
+    }
+
+    #menu-bar{
+        font-size:25px;
+        cursor: pointer;
+        color:rgb(255, 255, 255);
+        margin-top: -10px;
+        border-radius: 5px;
+        padding:8px;
+        display: none;
+    }
+
+
+h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color:rgb(88, 88, 88);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 20px;
+    margin-left: 20px;
+    color:rgb(102, 102, 102);
+    margin-right: 20px;
+}
+
+h3{
+    font-size: 30px;
+    margin-left: 20px;
+    color:rgb(75, 75, 75);
+    margin-right: 20px;
+}
+
+.we{
+    transform: translateY(50px);
+}
+
+.we #web .all .pangdafp .hh{
+    margin-left: -140px;
+    margin-top: -5px;
+}
+
+  /* 第()區 本站緣起 */
+  #web{
+    padding: 10px;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    height: 150px;
+}
+#web h2{
+font-size: 20px;
+color: rgb(165, 165, 165);
+text-align: center;
+
+}
+
+#web a{
+    font-size: 20px;
+    color:rgb(201, 110, 7);
+}
+
+#web .all{
+    justify-content: space-between;
+}
+
+#web .friends{
+    color:rgb(165, 165, 165);
+    font-size: 20px;
+    text-align: center;    
+    
+}
+
+#web .pangdafp h1{
+    
+    font-size: 21px;
+    color:rgb(114, 114, 114);
+    margin-left: -140px;
+   
+}
+
+#web .pangdafp h1:hover{
+        
+    font-size: 21px;
+    color:rgb(134, 73, 150);
+    margin-left: -140px;
+}
+
+/* footer */
+
+.footer{
+    background-color: rgb(158, 158, 158);
+    
+}
+
+.footer h1{
+    color: #fff;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.footer .go .people{
+    color: rgb(255, 255, 255);
+    font-size: 9px;
+    text-align: center;
+    margin: 0;
+}

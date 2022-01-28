@@ -1,0 +1,328 @@
+/* 頁面設定 */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.4s all linear;
+    font-size: 22px; 
+    font-family: Helvetica;
+}
+
+::selection {
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+::-moz-selection {
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+
+    /* 第一區 首頁 header*/
+#home header{
+        font-size: 20px;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background: #000;
+        opacity: 0.9;        
+    }
+
+    #home header  img{
+        height: 25px;
+        margin-left: 40px;
+    }
+
+    #home header a{
+        color: white;
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+     #home header  .navbar a:hover{
+        font-size: 25px;
+        font-weight: 100;
+        color:rgb(199, 199, 199);
+        margin-left: 20px;
+        transition: 0.1s;
+        background-color: rgb(0, 0, 0);
+        padding:1px 1px 1px 1px;
+    }
+
+    #home header img:hover{
+        font-size: 24px;
+        font-weight: 100;
+        background-color:rgb(168, 168, 168);
+        margin-left: 40px;
+        transition: 0.1s;
+        background-color: rgb(0, 0, 0);
+        padding:1px 1px 1px 1px;
+    }
+
+    #menu-bar{
+        font-size:25px;
+        cursor: pointer;
+        color:rgb(255, 255, 255);
+        margin-top: -10px;
+        border-radius: 5px;
+        padding:8px;
+        display: none;
+    }
+
+    /* 第二區 手機引覽 */
+
+    .more h6{
+    font-size: 21px;
+    color: rgb(43, 49, 138);
+    text-align: center;
+    margin-top: 20px;
+    z-index: 999;
+    }
+
+    .phone .phone-name{
+    text-align: center;
+    color:rgb(15, 15, 15);
+    margin-top: 100px;
+    font-size: 50px;
+    }
+
+    .phone .phone-t{
+    text-align: center;
+    color: rgb(15, 15, 15);
+    font-size: 20px;
+    }
+
+    .phone img{
+    margin-top: 20px;
+    height: auto;
+    max-width: 100%;
+    }
+
+    /* 影片 */
+    
+    .video{
+        height: 315px;
+        margin: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .video .youtube{
+        display: block;
+        margin: auto;
+        margin-top: -5px;
+        border-radius: 20px;
+        width: 560px;
+        height: 315px; 
+    }
+
+    .video .my{
+        font-size: 120px;
+        color:rgb(255, 137, 1);
+        transform: translateY(-140px);
+        margin-left: 144px;
+    }
+
+    .video .channel{
+        font-size: 60px;
+        color:rgb(255, 136, 0);
+        transform: translateY(-250px);
+        margin-left: 42.4rem;
+    }
+
+    .video a .go-my{
+        text-align: center;
+        transform: translateY(-220px);
+        margin-bottom: 20px;
+    }
+    /* 第()區 本站緣起 */
+   #web{
+        padding: 10px;
+        background-color: rgb(230, 230, 230);
+        text-align: center;
+        height: 300px;
+    }
+    #web h2{
+    font-size: 20px;
+    color: rgb(165, 165, 165);
+    text-align: center;
+    margin-top: 90px;
+    }
+
+    #web a{
+        font-size: 20px;
+        color:rgb(201, 110, 7);
+    }
+   
+    #web .all{
+        justify-content: space-between;
+    }
+
+    #web .friends{
+        color:rgb(165, 165, 165);
+        font-size: 20px;
+        margin-top: 30px;
+        text-align: center;    
+    }
+
+    #web .pangdafp h1{
+        
+        font-size: 21px;
+        color:rgb(87, 87, 87);
+        margin-left: -140px;
+    }
+
+    #web .pangdafp h1:hover{
+        
+        font-size: 21px;
+        color:rgb(134, 73, 150);
+        margin-left: -140px;
+    }
+
+    /* footer */
+
+.footer{
+    background-color: rgb(158, 158, 158);
+}
+
+.footer h1{
+    color: #fff;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.footer .go .people{
+    color: rgb(255, 255, 255);
+    font-size: 9px;
+    text-align: center;
+    margin: auto;
+}
+
+    @media (max-width:600px){
+        /* 第一區 header*/
+       #menu-bar{
+           display: initial;
+           position: absolute;
+           right:10px;
+           top:20px;
+           }
+           header .navbar{
+               position: absolute;
+               top:55px; left:0 ; right:0;
+               background-color: rgb(0, 0, 0);
+               border-top:3px solid rgb(0, 0, 0);
+               /* 隱藏下拉式選單 */
+               clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+           }
+   
+           header .navbar a{
+               /* 疊起來 */
+               display: block;
+               font-size:20px;
+               font-weight: normal;
+               color:rgb(255, 255, 255);
+               margin:10px; padding:6px;
+               background-color: rgb(0, 0, 0);
+           }
+           header .navbar.active{
+               clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+               padding:10px;
+           } 
+           
+           #home header  img{
+            height: 25px;
+            margin-left: 1px;
+        }
+
+        #home header img:hover{
+            font-size: 24px;
+            font-weight: 100;
+            background-color:rgb(168, 168, 168);
+            margin-left: 1px;
+            transition: 0.1s;
+            background-color: rgb(0, 0, 0);
+            padding:1px 1px 1px 1px;
+        }
+
+           /* 第二區 手機引覽 */
+
+           .more h6{
+            font-size: 15px;
+            color: rgb(43, 49, 138);
+            text-align: center;
+            margin-top: 20px;
+            z-index: 999;
+            }
+        
+            .phone .phone-name{
+            text-align: center;
+            color:rgb(15, 15, 15);
+            margin-top: 100px;
+            font-size: 30px;
+            }
+        
+            .phone .phone-t{
+            text-align: center;
+            color: rgb(15, 15, 15);
+            font-size: 15px;
+            }
+
+            .phone img{
+            margin-top: 20px;
+            height: 1000%;
+            }
+
+            /* 第三區 影片 */
+
+            .video .youtube{
+                display: block;
+                margin: auto;
+                margin-top: -5px;
+                width: 360px;
+                height: 215px; 
+            }
+
+        .video .my{
+            font-size: 60px;
+            color:rgb(255, 137, 1);
+            transform: translateY(0px);
+            text-overflow: clip;
+        }
+    
+        .video .channel{
+            font-size: 30px;
+            color:rgb(255, 136, 0);
+            transform: translateY(0px);
+        }
+    
+        .video a .go-my{
+            text-align: center;
+            transform: translateY(-20px);
+            margin-bottom: 20px;
+        }
+           /* 本站緣起 */
+           #wed{
+            padding: 10px;
+            background-color: rgb(230, 230, 230);
+            text-align: center;
+            height: 50px;
+           }
+
+           
+/*  */
+           #web h2{
+            font-size: 20px;
+            color: rgb(165, 165, 165);
+            text-align: center;
+            margin-top: 25px;
+            }
+
+        }   
+
+
+
